@@ -21,7 +21,7 @@ export const Navigation = () => {
             <ul>
               {routes.map(({ path, name }) => (
                 <li key={path}>
-                  <NavLink to={path} end>
+                  <NavLink to={path}>
                     {name}
                   </NavLink>
                 </li>
@@ -36,7 +36,7 @@ export const Navigation = () => {
               <Route key={path} path={path} element={<Component />} />
             ))}
 
-            <Route path="*" element={<LazyPage1 />} />
+            {/* <Route path="*" element={<LazyPage1 />} /> */}
           </Routes>
         </div>
       </Router>
