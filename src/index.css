@@ -47,7 +47,7 @@ nav li a {
   text-decoration: none;
 }
 
-nav .active {
+nav .active, nav .nav-active {
   color: grey;
   transition: all .3s ease-out;
 }
