@@ -18,7 +18,7 @@ export const ProductButtons = ({ className, style }: Props ) => {
             -{" "}
         </button>
 
-        <div className={styles.countLabel}> {counter} </div>
+        <div className={styles.countLabel}> { counter } </div>
 
         <button onClick={() => increaseBy(+1)} className={styles.buttonAdd}>
             {" "}

@@ -22,3 +22,9 @@
     color: #fff;
     border-color: white;
 }
+
+.shopping-cart {
+    position: fixed;
+    right: 10px;
+    top: 0px;
+}
