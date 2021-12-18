@@ -15,6 +15,8 @@ import {
 } from '../03-forms/pages';
 
 import logo from '../logo.svg'
+import { RegisterFormikPage } from '../03-forms/pages/RegisterFormikPage';
+import { DynamicForm } from '../03-forms/pages/DynamicForm';
 
 export const Navigation = () => {
   return (
@@ -25,6 +27,9 @@ export const Navigation = () => {
           <ul>
             <li>
               <NavLink to="/register" end>Register Page</NavLink>
+            </li>
+            <li>
+              <NavLink to="/register-formik" end>Register Formik</NavLink>
             </li>
             <li>
               <NavLink to="/formik-basic" end>Formik Basic</NavLink>
@@ -39,6 +44,9 @@ export const Navigation = () => {
               <NavLink to="/formik-abstractation" end>Formik Abstractation</NavLink>
             </li>
             <li>
+              <NavLink to="/dynamic-form" end>Dynamic Form</NavLink>
+            </li>
+            <li>
               <NavLink to="/users" end>Users</NavLink>
             </li>
           </ul>
@@ -48,10 +56,12 @@ export const Navigation = () => {
             renders the first one that matches the current URL. */}
         <Routes>
           <Route path="/register" element={ <RegisterPage /> } />
+          <Route path="/register-formik" element={ <RegisterFormikPage /> } />
           <Route path="/formik-basic" element={ <FormikBasicPage /> } />
           <Route path="/formik-yup" element={ <FormikYupPage /> } />
           <Route path="/formik-components" element={ <FormikComponents /> } />
           <Route path="/formik-abstractation" element={ <FormikAbstractation /> } />
+          <Route path="/dynamic-form" element={ <DynamicForm /> } />
           <Route path="/" element={ <h1>Home</h1> } />
         </Routes>
       </div>

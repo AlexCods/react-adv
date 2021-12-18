@@ -1,4 +1,4 @@
-import { FormikErrors, useFormik } from "formik";
+import { useFormik } from "formik";
 import * as Yup from 'yup';
 
 import "../styles/styles.css";
